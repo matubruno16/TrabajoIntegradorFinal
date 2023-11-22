@@ -1,15 +1,113 @@
-body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", sans-serif;
   margin: 0;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #191919;
 }
 
+.titulo h1,
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.formulario {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.formulario input {
+  background-color: aliceblue;
+  color: #191919;
+  font-size: 20px;
+  width: 70%;
+  height: 3rem;
+  padding: 0 10px;
+  border: none;
+  border-radius: 1rem;
+}
+.formulario button {
+  width: 20%;
+  border: none;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  background-color: aliceblue;
+  color: #191919;
+  font-weight: 700;
+}
+
+.seccion-tareas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: #4e4e4e;
+}
+
+.lista-tareas {
+  background-color: aliceblue;
+  color: #191919;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #4e4e4e;
+  border-radius: 1rem;
+  margin-bottom: 14px;
+  justify-content: space-between;
+}
+
+.tarea {
+  font-size: 19px;
+  background-color: aliceblue;
+  color: #191919;
+  display: flex;
+  align-items: center;
+}
+
+.iconos {
+  display: flex;
+}
+
+.icono-task {
+  padding-right: 12px;
+  background-color: aliceblue;
+  width: 20px;
+  height: 20px;
+}
+
+.completada {
+  border: 3px solid #4caf50;
+}
+.completada-texto {
+  color: green;
+  text-decoration: line-through;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px;
+}
+.logo-argprog{
+  width: 200px;
+  
+}
+
+.error-mensaje {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+
+}
