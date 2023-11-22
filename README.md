@@ -1,8 +1,7 @@
-# React + Vite
+# Trabajo Integrador Final UTN 4.0 Argentina Programa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Curso de Desarrollo Web con React JS.
 
-Currently, two official plugins are available:
+Donde aprendimos los conocimientos básicos sobre React. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Como Trabajo Final Integrador se solicitó una App de Listado de Tareas. Donde se debía poder seleccionar como completadas y también poder eliminarlas de las lista.
