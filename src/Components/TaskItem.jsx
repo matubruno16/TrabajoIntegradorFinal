@@ -9,7 +9,7 @@ export const TaskItem = ({ tarea, index, handleDelete }) => {
 
   const [completada, setCompletada] = useState(!!storedCompletadas[index]);
 
-  const handleToggleCompletada = () => {
+  const handleCompletada = () => {
     const updatedCompletadas = { ...storedCompletadas, [index]: !completada };
     setCompletada(!completada);
     localStorage.setItem("completadas", JSON.stringify(updatedCompletadas));
@@ -24,7 +24,7 @@ export const TaskItem = ({ tarea, index, handleDelete }) => {
       <p className={`tarea ${completada ? "completada-texto" : ""}`}>{tarea}</p>
       <div className="iconos">
         <img
-          onClick={handleToggleCompletada}
+          onClick={handleCompletada}
           className="icono-task"
           src={iconCompleted}
           alt="icono tarea completada"
