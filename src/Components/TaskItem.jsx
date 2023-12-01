@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import iconDelete from "../assets/icons8-eliminar-250.png";
 import iconCompleted from "../assets/icons8-marca-de-verificación-250.png";
 
@@ -15,9 +15,6 @@ export const TaskItem = ({ tarea, index, handleDelete }) => {
     localStorage.setItem("completadas", JSON.stringify(updatedCompletadas));
   };
 
-  useEffect(() => {
-    return () => localStorage.removeItem("completadas");
-  }, []);
 
   return (
     <div className={`lista-tareas ${completada ? "completada" : ""}`}>
